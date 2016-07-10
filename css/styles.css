@@ -35,7 +35,8 @@ html, body {
     -moz-border-radius: 4px;
     border-radius: 4px;
     border: 1px solid #e2e2e2;
-    background: #fafafa; }
+    background: #fafafa;
+    margin: 0 0 40px 0; }
     .panel-row .summary-panel .wrapper {
       padding: 20px 20px 0 20px; }
     .panel-row .summary-panel .title {
