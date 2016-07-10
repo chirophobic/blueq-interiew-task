@@ -122,7 +122,13 @@ Basic structure of a panel:
          */
         createBarChart: function (label, value, percentage) {
             // Ensure the percentage is between 0 and 100 (inclusive of both)
-            percentage = percentage % 101;
+            if (percentage < 0) {
+                percentage = 0;
+            }
+
+            if (percentage > 100) {
+                percentage = 100;
+            }
 
             var elem = document.createElement("div");
             elem.classList = "bar-chart";
