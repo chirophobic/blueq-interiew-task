@@ -9,7 +9,17 @@ html, body {
   margin-right: 0;
 }
 
-.period-selector {
+.period-amount-selector {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.period-selector {
+  .previous a, .next a {
+    color: #373737;
+  }
+
+  .current span {
+    color: #373737;
+  }
 }

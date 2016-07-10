@@ -15,9 +15,14 @@ html, body {
   margin-left: 0;
   margin-right: 0; }
 
-.period-selector {
+.period-amount-selector {
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.period-selector .previous a, .period-selector .next a {
+  color: #373737; }
+.period-selector .current span {
+  color: #373737; }
 
 .banner {
   height: 50px;
