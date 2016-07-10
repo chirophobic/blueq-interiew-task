@@ -35,15 +35,15 @@ html, body {
     -moz-border-radius: 4px;
     border-radius: 4px;
     border: 1px solid #e2e2e2;
-    background: #fafafa;
-    height: 300px; }
+    background: #fafafa; }
     .panel-row .summary-panel .wrapper {
-      padding: 20px; }
+      padding: 20px 20px 0 20px; }
     .panel-row .summary-panel .title {
       text-transform: uppercase;
       color: #A4A4A4;
       font-size: 8pt; }
     .panel-row .summary-panel .value {
+      margin-top: 10px;
       font-size: 38pt; }
     .panel-row .summary-panel .net-value {
       color: blue; }
@@ -56,6 +56,7 @@ html, body {
       width: 100%;
       background: #F1F1F1;
       padding: 5px;
+      margin: 30px 0;
       font-size: 8pt; }
       .panel-row .summary-panel .bar-chart:before {
         content: " ";
@@ -67,205 +68,905 @@ html, body {
         top: 0;
         height: 100%; }
       .panel-row .summary-panel .bar-chart[percentage='1']:before {
-        width: 1%; }
+        width: 1%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-1; }
+@keyframes slide-in-bar-chart-1 {
+  from {
+    width: 0; }
+  to {
+    width: 1%; } }
       .panel-row .summary-panel .bar-chart[percentage='2']:before {
-        width: 2%; }
+        width: 2%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-2; }
+@keyframes slide-in-bar-chart-2 {
+  from {
+    width: 0; }
+  to {
+    width: 2%; } }
       .panel-row .summary-panel .bar-chart[percentage='3']:before {
-        width: 3%; }
+        width: 3%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-3; }
+@keyframes slide-in-bar-chart-3 {
+  from {
+    width: 0; }
+  to {
+    width: 3%; } }
       .panel-row .summary-panel .bar-chart[percentage='4']:before {
-        width: 4%; }
+        width: 4%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-4; }
+@keyframes slide-in-bar-chart-4 {
+  from {
+    width: 0; }
+  to {
+    width: 4%; } }
       .panel-row .summary-panel .bar-chart[percentage='5']:before {
-        width: 5%; }
+        width: 5%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-5; }
+@keyframes slide-in-bar-chart-5 {
+  from {
+    width: 0; }
+  to {
+    width: 5%; } }
       .panel-row .summary-panel .bar-chart[percentage='6']:before {
-        width: 6%; }
+        width: 6%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-6; }
+@keyframes slide-in-bar-chart-6 {
+  from {
+    width: 0; }
+  to {
+    width: 6%; } }
       .panel-row .summary-panel .bar-chart[percentage='7']:before {
-        width: 7%; }
+        width: 7%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-7; }
+@keyframes slide-in-bar-chart-7 {
+  from {
+    width: 0; }
+  to {
+    width: 7%; } }
       .panel-row .summary-panel .bar-chart[percentage='8']:before {
-        width: 8%; }
+        width: 8%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-8; }
+@keyframes slide-in-bar-chart-8 {
+  from {
+    width: 0; }
+  to {
+    width: 8%; } }
       .panel-row .summary-panel .bar-chart[percentage='9']:before {
-        width: 9%; }
+        width: 9%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-9; }
+@keyframes slide-in-bar-chart-9 {
+  from {
+    width: 0; }
+  to {
+    width: 9%; } }
       .panel-row .summary-panel .bar-chart[percentage='10']:before {
-        width: 10%; }
+        width: 10%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-10; }
+@keyframes slide-in-bar-chart-10 {
+  from {
+    width: 0; }
+  to {
+    width: 10%; } }
       .panel-row .summary-panel .bar-chart[percentage='11']:before {
-        width: 11%; }
+        width: 11%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-11; }
+@keyframes slide-in-bar-chart-11 {
+  from {
+    width: 0; }
+  to {
+    width: 11%; } }
       .panel-row .summary-panel .bar-chart[percentage='12']:before {
-        width: 12%; }
+        width: 12%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-12; }
+@keyframes slide-in-bar-chart-12 {
+  from {
+    width: 0; }
+  to {
+    width: 12%; } }
       .panel-row .summary-panel .bar-chart[percentage='13']:before {
-        width: 13%; }
+        width: 13%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-13; }
+@keyframes slide-in-bar-chart-13 {
+  from {
+    width: 0; }
+  to {
+    width: 13%; } }
       .panel-row .summary-panel .bar-chart[percentage='14']:before {
-        width: 14%; }
+        width: 14%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-14; }
+@keyframes slide-in-bar-chart-14 {
+  from {
+    width: 0; }
+  to {
+    width: 14%; } }
       .panel-row .summary-panel .bar-chart[percentage='15']:before {
-        width: 15%; }
+        width: 15%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-15; }
+@keyframes slide-in-bar-chart-15 {
+  from {
+    width: 0; }
+  to {
+    width: 15%; } }
       .panel-row .summary-panel .bar-chart[percentage='16']:before {
-        width: 16%; }
+        width: 16%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-16; }
+@keyframes slide-in-bar-chart-16 {
+  from {
+    width: 0; }
+  to {
+    width: 16%; } }
       .panel-row .summary-panel .bar-chart[percentage='17']:before {
-        width: 17%; }
+        width: 17%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-17; }
+@keyframes slide-in-bar-chart-17 {
+  from {
+    width: 0; }
+  to {
+    width: 17%; } }
       .panel-row .summary-panel .bar-chart[percentage='18']:before {
-        width: 18%; }
+        width: 18%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-18; }
+@keyframes slide-in-bar-chart-18 {
+  from {
+    width: 0; }
+  to {
+    width: 18%; } }
       .panel-row .summary-panel .bar-chart[percentage='19']:before {
-        width: 19%; }
+        width: 19%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-19; }
+@keyframes slide-in-bar-chart-19 {
+  from {
+    width: 0; }
+  to {
+    width: 19%; } }
       .panel-row .summary-panel .bar-chart[percentage='20']:before {
-        width: 20%; }
+        width: 20%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-20; }
+@keyframes slide-in-bar-chart-20 {
+  from {
+    width: 0; }
+  to {
+    width: 20%; } }
       .panel-row .summary-panel .bar-chart[percentage='21']:before {
-        width: 21%; }
+        width: 21%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-21; }
+@keyframes slide-in-bar-chart-21 {
+  from {
+    width: 0; }
+  to {
+    width: 21%; } }
       .panel-row .summary-panel .bar-chart[percentage='22']:before {
-        width: 22%; }
+        width: 22%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-22; }
+@keyframes slide-in-bar-chart-22 {
+  from {
+    width: 0; }
+  to {
+    width: 22%; } }
       .panel-row .summary-panel .bar-chart[percentage='23']:before {
-        width: 23%; }
+        width: 23%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-23; }
+@keyframes slide-in-bar-chart-23 {
+  from {
+    width: 0; }
+  to {
+    width: 23%; } }
       .panel-row .summary-panel .bar-chart[percentage='24']:before {
-        width: 24%; }
+        width: 24%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-24; }
+@keyframes slide-in-bar-chart-24 {
+  from {
+    width: 0; }
+  to {
+    width: 24%; } }
       .panel-row .summary-panel .bar-chart[percentage='25']:before {
-        width: 25%; }
+        width: 25%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-25; }
+@keyframes slide-in-bar-chart-25 {
+  from {
+    width: 0; }
+  to {
+    width: 25%; } }
       .panel-row .summary-panel .bar-chart[percentage='26']:before {
-        width: 26%; }
+        width: 26%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-26; }
+@keyframes slide-in-bar-chart-26 {
+  from {
+    width: 0; }
+  to {
+    width: 26%; } }
       .panel-row .summary-panel .bar-chart[percentage='27']:before {
-        width: 27%; }
+        width: 27%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-27; }
+@keyframes slide-in-bar-chart-27 {
+  from {
+    width: 0; }
+  to {
+    width: 27%; } }
       .panel-row .summary-panel .bar-chart[percentage='28']:before {
-        width: 28%; }
+        width: 28%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-28; }
+@keyframes slide-in-bar-chart-28 {
+  from {
+    width: 0; }
+  to {
+    width: 28%; } }
       .panel-row .summary-panel .bar-chart[percentage='29']:before {
-        width: 29%; }
+        width: 29%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-29; }
+@keyframes slide-in-bar-chart-29 {
+  from {
+    width: 0; }
+  to {
+    width: 29%; } }
       .panel-row .summary-panel .bar-chart[percentage='30']:before {
-        width: 30%; }
+        width: 30%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-30; }
+@keyframes slide-in-bar-chart-30 {
+  from {
+    width: 0; }
+  to {
+    width: 30%; } }
       .panel-row .summary-panel .bar-chart[percentage='31']:before {
-        width: 31%; }
+        width: 31%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-31; }
+@keyframes slide-in-bar-chart-31 {
+  from {
+    width: 0; }
+  to {
+    width: 31%; } }
       .panel-row .summary-panel .bar-chart[percentage='32']:before {
-        width: 32%; }
+        width: 32%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-32; }
+@keyframes slide-in-bar-chart-32 {
+  from {
+    width: 0; }
+  to {
+    width: 32%; } }
       .panel-row .summary-panel .bar-chart[percentage='33']:before {
-        width: 33%; }
+        width: 33%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-33; }
+@keyframes slide-in-bar-chart-33 {
+  from {
+    width: 0; }
+  to {
+    width: 33%; } }
       .panel-row .summary-panel .bar-chart[percentage='34']:before {
-        width: 34%; }
+        width: 34%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-34; }
+@keyframes slide-in-bar-chart-34 {
+  from {
+    width: 0; }
+  to {
+    width: 34%; } }
       .panel-row .summary-panel .bar-chart[percentage='35']:before {
-        width: 35%; }
+        width: 35%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-35; }
+@keyframes slide-in-bar-chart-35 {
+  from {
+    width: 0; }
+  to {
+    width: 35%; } }
       .panel-row .summary-panel .bar-chart[percentage='36']:before {
-        width: 36%; }
+        width: 36%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-36; }
+@keyframes slide-in-bar-chart-36 {
+  from {
+    width: 0; }
+  to {
+    width: 36%; } }
       .panel-row .summary-panel .bar-chart[percentage='37']:before {
-        width: 37%; }
+        width: 37%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-37; }
+@keyframes slide-in-bar-chart-37 {
+  from {
+    width: 0; }
+  to {
+    width: 37%; } }
       .panel-row .summary-panel .bar-chart[percentage='38']:before {
-        width: 38%; }
+        width: 38%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-38; }
+@keyframes slide-in-bar-chart-38 {
+  from {
+    width: 0; }
+  to {
+    width: 38%; } }
       .panel-row .summary-panel .bar-chart[percentage='39']:before {
-        width: 39%; }
+        width: 39%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-39; }
+@keyframes slide-in-bar-chart-39 {
+  from {
+    width: 0; }
+  to {
+    width: 39%; } }
       .panel-row .summary-panel .bar-chart[percentage='40']:before {
-        width: 40%; }
+        width: 40%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-40; }
+@keyframes slide-in-bar-chart-40 {
+  from {
+    width: 0; }
+  to {
+    width: 40%; } }
       .panel-row .summary-panel .bar-chart[percentage='41']:before {
-        width: 41%; }
+        width: 41%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-41; }
+@keyframes slide-in-bar-chart-41 {
+  from {
+    width: 0; }
+  to {
+    width: 41%; } }
       .panel-row .summary-panel .bar-chart[percentage='42']:before {
-        width: 42%; }
+        width: 42%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-42; }
+@keyframes slide-in-bar-chart-42 {
+  from {
+    width: 0; }
+  to {
+    width: 42%; } }
       .panel-row .summary-panel .bar-chart[percentage='43']:before {
-        width: 43%; }
+        width: 43%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-43; }
+@keyframes slide-in-bar-chart-43 {
+  from {
+    width: 0; }
+  to {
+    width: 43%; } }
       .panel-row .summary-panel .bar-chart[percentage='44']:before {
-        width: 44%; }
+        width: 44%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-44; }
+@keyframes slide-in-bar-chart-44 {
+  from {
+    width: 0; }
+  to {
+    width: 44%; } }
       .panel-row .summary-panel .bar-chart[percentage='45']:before {
-        width: 45%; }
+        width: 45%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-45; }
+@keyframes slide-in-bar-chart-45 {
+  from {
+    width: 0; }
+  to {
+    width: 45%; } }
       .panel-row .summary-panel .bar-chart[percentage='46']:before {
-        width: 46%; }
+        width: 46%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-46; }
+@keyframes slide-in-bar-chart-46 {
+  from {
+    width: 0; }
+  to {
+    width: 46%; } }
       .panel-row .summary-panel .bar-chart[percentage='47']:before {
-        width: 47%; }
+        width: 47%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-47; }
+@keyframes slide-in-bar-chart-47 {
+  from {
+    width: 0; }
+  to {
+    width: 47%; } }
       .panel-row .summary-panel .bar-chart[percentage='48']:before {
-        width: 48%; }
+        width: 48%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-48; }
+@keyframes slide-in-bar-chart-48 {
+  from {
+    width: 0; }
+  to {
+    width: 48%; } }
       .panel-row .summary-panel .bar-chart[percentage='49']:before {
-        width: 49%; }
+        width: 49%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-49; }
+@keyframes slide-in-bar-chart-49 {
+  from {
+    width: 0; }
+  to {
+    width: 49%; } }
       .panel-row .summary-panel .bar-chart[percentage='50']:before {
-        width: 50%; }
+        width: 50%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-50; }
+@keyframes slide-in-bar-chart-50 {
+  from {
+    width: 0; }
+  to {
+    width: 50%; } }
       .panel-row .summary-panel .bar-chart[percentage='51']:before {
-        width: 51%; }
+        width: 51%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-51; }
+@keyframes slide-in-bar-chart-51 {
+  from {
+    width: 0; }
+  to {
+    width: 51%; } }
       .panel-row .summary-panel .bar-chart[percentage='52']:before {
-        width: 52%; }
+        width: 52%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-52; }
+@keyframes slide-in-bar-chart-52 {
+  from {
+    width: 0; }
+  to {
+    width: 52%; } }
       .panel-row .summary-panel .bar-chart[percentage='53']:before {
-        width: 53%; }
+        width: 53%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-53; }
+@keyframes slide-in-bar-chart-53 {
+  from {
+    width: 0; }
+  to {
+    width: 53%; } }
       .panel-row .summary-panel .bar-chart[percentage='54']:before {
-        width: 54%; }
+        width: 54%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-54; }
+@keyframes slide-in-bar-chart-54 {
+  from {
+    width: 0; }
+  to {
+    width: 54%; } }
       .panel-row .summary-panel .bar-chart[percentage='55']:before {
-        width: 55%; }
+        width: 55%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-55; }
+@keyframes slide-in-bar-chart-55 {
+  from {
+    width: 0; }
+  to {
+    width: 55%; } }
       .panel-row .summary-panel .bar-chart[percentage='56']:before {
-        width: 56%; }
+        width: 56%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-56; }
+@keyframes slide-in-bar-chart-56 {
+  from {
+    width: 0; }
+  to {
+    width: 56%; } }
       .panel-row .summary-panel .bar-chart[percentage='57']:before {
-        width: 57%; }
+        width: 57%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-57; }
+@keyframes slide-in-bar-chart-57 {
+  from {
+    width: 0; }
+  to {
+    width: 57%; } }
       .panel-row .summary-panel .bar-chart[percentage='58']:before {
-        width: 58%; }
+        width: 58%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-58; }
+@keyframes slide-in-bar-chart-58 {
+  from {
+    width: 0; }
+  to {
+    width: 58%; } }
       .panel-row .summary-panel .bar-chart[percentage='59']:before {
-        width: 59%; }
+        width: 59%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-59; }
+@keyframes slide-in-bar-chart-59 {
+  from {
+    width: 0; }
+  to {
+    width: 59%; } }
       .panel-row .summary-panel .bar-chart[percentage='60']:before {
-        width: 60%; }
+        width: 60%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-60; }
+@keyframes slide-in-bar-chart-60 {
+  from {
+    width: 0; }
+  to {
+    width: 60%; } }
       .panel-row .summary-panel .bar-chart[percentage='61']:before {
-        width: 61%; }
+        width: 61%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-61; }
+@keyframes slide-in-bar-chart-61 {
+  from {
+    width: 0; }
+  to {
+    width: 61%; } }
       .panel-row .summary-panel .bar-chart[percentage='62']:before {
-        width: 62%; }
+        width: 62%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-62; }
+@keyframes slide-in-bar-chart-62 {
+  from {
+    width: 0; }
+  to {
+    width: 62%; } }
       .panel-row .summary-panel .bar-chart[percentage='63']:before {
-        width: 63%; }
+        width: 63%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-63; }
+@keyframes slide-in-bar-chart-63 {
+  from {
+    width: 0; }
+  to {
+    width: 63%; } }
       .panel-row .summary-panel .bar-chart[percentage='64']:before {
-        width: 64%; }
+        width: 64%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-64; }
+@keyframes slide-in-bar-chart-64 {
+  from {
+    width: 0; }
+  to {
+    width: 64%; } }
       .panel-row .summary-panel .bar-chart[percentage='65']:before {
-        width: 65%; }
+        width: 65%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-65; }
+@keyframes slide-in-bar-chart-65 {
+  from {
+    width: 0; }
+  to {
+    width: 65%; } }
       .panel-row .summary-panel .bar-chart[percentage='66']:before {
-        width: 66%; }
+        width: 66%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-66; }
+@keyframes slide-in-bar-chart-66 {
+  from {
+    width: 0; }
+  to {
+    width: 66%; } }
       .panel-row .summary-panel .bar-chart[percentage='67']:before {
-        width: 67%; }
+        width: 67%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-67; }
+@keyframes slide-in-bar-chart-67 {
+  from {
+    width: 0; }
+  to {
+    width: 67%; } }
       .panel-row .summary-panel .bar-chart[percentage='68']:before {
-        width: 68%; }
+        width: 68%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-68; }
+@keyframes slide-in-bar-chart-68 {
+  from {
+    width: 0; }
+  to {
+    width: 68%; } }
       .panel-row .summary-panel .bar-chart[percentage='69']:before {
-        width: 69%; }
+        width: 69%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-69; }
+@keyframes slide-in-bar-chart-69 {
+  from {
+    width: 0; }
+  to {
+    width: 69%; } }
       .panel-row .summary-panel .bar-chart[percentage='70']:before {
-        width: 70%; }
+        width: 70%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-70; }
+@keyframes slide-in-bar-chart-70 {
+  from {
+    width: 0; }
+  to {
+    width: 70%; } }
       .panel-row .summary-panel .bar-chart[percentage='71']:before {
-        width: 71%; }
+        width: 71%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-71; }
+@keyframes slide-in-bar-chart-71 {
+  from {
+    width: 0; }
+  to {
+    width: 71%; } }
       .panel-row .summary-panel .bar-chart[percentage='72']:before {
-        width: 72%; }
+        width: 72%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-72; }
+@keyframes slide-in-bar-chart-72 {
+  from {
+    width: 0; }
+  to {
+    width: 72%; } }
       .panel-row .summary-panel .bar-chart[percentage='73']:before {
-        width: 73%; }
+        width: 73%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-73; }
+@keyframes slide-in-bar-chart-73 {
+  from {
+    width: 0; }
+  to {
+    width: 73%; } }
       .panel-row .summary-panel .bar-chart[percentage='74']:before {
-        width: 74%; }
+        width: 74%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-74; }
+@keyframes slide-in-bar-chart-74 {
+  from {
+    width: 0; }
+  to {
+    width: 74%; } }
       .panel-row .summary-panel .bar-chart[percentage='75']:before {
-        width: 75%; }
+        width: 75%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-75; }
+@keyframes slide-in-bar-chart-75 {
+  from {
+    width: 0; }
+  to {
+    width: 75%; } }
       .panel-row .summary-panel .bar-chart[percentage='76']:before {
-        width: 76%; }
+        width: 76%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-76; }
+@keyframes slide-in-bar-chart-76 {
+  from {
+    width: 0; }
+  to {
+    width: 76%; } }
       .panel-row .summary-panel .bar-chart[percentage='77']:before {
-        width: 77%; }
+        width: 77%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-77; }
+@keyframes slide-in-bar-chart-77 {
+  from {
+    width: 0; }
+  to {
+    width: 77%; } }
       .panel-row .summary-panel .bar-chart[percentage='78']:before {
-        width: 78%; }
+        width: 78%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-78; }
+@keyframes slide-in-bar-chart-78 {
+  from {
+    width: 0; }
+  to {
+    width: 78%; } }
       .panel-row .summary-panel .bar-chart[percentage='79']:before {
-        width: 79%; }
+        width: 79%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-79; }
+@keyframes slide-in-bar-chart-79 {
+  from {
+    width: 0; }
+  to {
+    width: 79%; } }
       .panel-row .summary-panel .bar-chart[percentage='80']:before {
-        width: 80%; }
+        width: 80%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-80; }
+@keyframes slide-in-bar-chart-80 {
+  from {
+    width: 0; }
+  to {
+    width: 80%; } }
       .panel-row .summary-panel .bar-chart[percentage='81']:before {
-        width: 81%; }
+        width: 81%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-81; }
+@keyframes slide-in-bar-chart-81 {
+  from {
+    width: 0; }
+  to {
+    width: 81%; } }
       .panel-row .summary-panel .bar-chart[percentage='82']:before {
-        width: 82%; }
+        width: 82%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-82; }
+@keyframes slide-in-bar-chart-82 {
+  from {
+    width: 0; }
+  to {
+    width: 82%; } }
       .panel-row .summary-panel .bar-chart[percentage='83']:before {
-        width: 83%; }
+        width: 83%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-83; }
+@keyframes slide-in-bar-chart-83 {
+  from {
+    width: 0; }
+  to {
+    width: 83%; } }
       .panel-row .summary-panel .bar-chart[percentage='84']:before {
-        width: 84%; }
+        width: 84%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-84; }
+@keyframes slide-in-bar-chart-84 {
+  from {
+    width: 0; }
+  to {
+    width: 84%; } }
       .panel-row .summary-panel .bar-chart[percentage='85']:before {
-        width: 85%; }
+        width: 85%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-85; }
+@keyframes slide-in-bar-chart-85 {
+  from {
+    width: 0; }
+  to {
+    width: 85%; } }
       .panel-row .summary-panel .bar-chart[percentage='86']:before {
-        width: 86%; }
+        width: 86%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-86; }
+@keyframes slide-in-bar-chart-86 {
+  from {
+    width: 0; }
+  to {
+    width: 86%; } }
       .panel-row .summary-panel .bar-chart[percentage='87']:before {
-        width: 87%; }
+        width: 87%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-87; }
+@keyframes slide-in-bar-chart-87 {
+  from {
+    width: 0; }
+  to {
+    width: 87%; } }
       .panel-row .summary-panel .bar-chart[percentage='88']:before {
-        width: 88%; }
+        width: 88%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-88; }
+@keyframes slide-in-bar-chart-88 {
+  from {
+    width: 0; }
+  to {
+    width: 88%; } }
       .panel-row .summary-panel .bar-chart[percentage='89']:before {
-        width: 89%; }
+        width: 89%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-89; }
+@keyframes slide-in-bar-chart-89 {
+  from {
+    width: 0; }
+  to {
+    width: 89%; } }
       .panel-row .summary-panel .bar-chart[percentage='90']:before {
-        width: 90%; }
+        width: 90%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-90; }
+@keyframes slide-in-bar-chart-90 {
+  from {
+    width: 0; }
+  to {
+    width: 90%; } }
       .panel-row .summary-panel .bar-chart[percentage='91']:before {
-        width: 91%; }
+        width: 91%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-91; }
+@keyframes slide-in-bar-chart-91 {
+  from {
+    width: 0; }
+  to {
+    width: 91%; } }
       .panel-row .summary-panel .bar-chart[percentage='92']:before {
-        width: 92%; }
+        width: 92%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-92; }
+@keyframes slide-in-bar-chart-92 {
+  from {
+    width: 0; }
+  to {
+    width: 92%; } }
       .panel-row .summary-panel .bar-chart[percentage='93']:before {
-        width: 93%; }
+        width: 93%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-93; }
+@keyframes slide-in-bar-chart-93 {
+  from {
+    width: 0; }
+  to {
+    width: 93%; } }
       .panel-row .summary-panel .bar-chart[percentage='94']:before {
-        width: 94%; }
+        width: 94%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-94; }
+@keyframes slide-in-bar-chart-94 {
+  from {
+    width: 0; }
+  to {
+    width: 94%; } }
       .panel-row .summary-panel .bar-chart[percentage='95']:before {
-        width: 95%; }
+        width: 95%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-95; }
+@keyframes slide-in-bar-chart-95 {
+  from {
+    width: 0; }
+  to {
+    width: 95%; } }
       .panel-row .summary-panel .bar-chart[percentage='96']:before {
-        width: 96%; }
+        width: 96%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-96; }
+@keyframes slide-in-bar-chart-96 {
+  from {
+    width: 0; }
+  to {
+    width: 96%; } }
       .panel-row .summary-panel .bar-chart[percentage='97']:before {
-        width: 97%; }
+        width: 97%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-97; }
+@keyframes slide-in-bar-chart-97 {
+  from {
+    width: 0; }
+  to {
+    width: 97%; } }
       .panel-row .summary-panel .bar-chart[percentage='98']:before {
-        width: 98%; }
+        width: 98%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-98; }
+@keyframes slide-in-bar-chart-98 {
+  from {
+    width: 0; }
+  to {
+    width: 98%; } }
       .panel-row .summary-panel .bar-chart[percentage='99']:before {
-        width: 99%; }
+        width: 99%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-99; }
+@keyframes slide-in-bar-chart-99 {
+  from {
+    width: 0; }
+  to {
+    width: 99%; } }
       .panel-row .summary-panel .bar-chart[percentage='100']:before {
-        width: 100%; }
+        width: 100%;
+        animation-duration: 1s;
+        animation-name: slide-in-bar-chart-100; }
+@keyframes slide-in-bar-chart-100 {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
       .panel-row .summary-panel .bar-chart:after {
         float: right;
         content: attr(value); }
