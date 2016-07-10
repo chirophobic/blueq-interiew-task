@@ -9,17 +9,32 @@ html, body {
   margin-right: 0;
 }
 
-.period-amount-selector {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+.header {
+  // So it lines up with the panels bellow it
+  padding: 0 15px;
 
-.period-selector {
-  .previous a, .next a {
-    color: #373737;
+  h1 {
+    float: left;
   }
 
-  .current span {
-    color: #373737;
+  .toolbar {
+    float: right;
+  }
+
+  .period-amount-selector {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .period-selector {
+    .previous a, .next a {
+      color: #373737;
+    }
+
+    .current span {
+      color: #373737;
+    }
   }
 }
+
+

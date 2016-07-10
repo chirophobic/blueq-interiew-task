@@ -15,14 +15,19 @@ html, body {
   margin-left: 0;
   margin-right: 0; }
 
-.period-amount-selector {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.period-selector .previous a, .period-selector .next a {
-  color: #373737; }
-.period-selector .current span {
-  color: #373737; }
+.header {
+  padding: 0 15px; }
+  .header h1 {
+    float: left; }
+  .header .toolbar {
+    float: right; }
+  .header .period-amount-selector {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .header .period-selector .previous a, .header .period-selector .next a {
+    color: #373737; }
+  .header .period-selector .current span {
+    color: #373737; }
 
 .banner {
   background: #373737;
