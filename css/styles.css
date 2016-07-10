@@ -25,9 +25,16 @@ html, body {
   color: #373737; }
 
 .banner {
-  height: 50px;
   background: #373737;
-  border-bottom: 1px solid #1c1c1c; }
+  border-bottom: 1px solid #1c1c1c;
+  text-align: right; }
+  .banner .shop, .banner .user, .banner .logout {
+    display: inline-block;
+    padding: 10px 40px 10px 0; }
+  .banner .shop, .banner .user {
+    color: #757575; }
+  .banner .logout {
+    color: #b7b7b7; }
 
 .sidebar {
   background: #fafafa;
