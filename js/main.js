@@ -1,8 +1,9 @@
 var panelsToCreate = [];
 
 window.onload = function () {
-    // Reverse the array so that the first created panal appears first
-    panelsToCreate.reverse();
+    // Panels are created and inserted in reverse order so that
+    // the first ones that should be near the top animate because for some reason
+    // Chart.js only animates the last 5 charts created....
     while (panelsToCreate.length) {
         var createFunction = panelsToCreate.pop();
         if (typeof createFunction === "function") {
@@ -29,7 +30,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Sale Count
@@ -50,7 +51,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Customer Count
@@ -71,7 +72,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Gross Profit
@@ -92,7 +93,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Discount
@@ -113,7 +114,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Discount %
@@ -134,7 +135,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Basket Value
@@ -155,7 +156,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 // Basket Size
@@ -176,7 +177,7 @@ panelsToCreate.push(function () {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
             values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
         }
-    });
+    }, true);
 });
 
 

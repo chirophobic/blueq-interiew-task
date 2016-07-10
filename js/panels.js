@@ -145,10 +145,13 @@ Basic structure of a panel:
      * Create a new panel and add it to the page
      * @param {{}} options
      *  The options to create the panel with
+     * @param {boolean} [prepend=false]
+     *  Optionally elect to have the new panel inserted at the beginning, rather appended
+     *  to the end
      * @return Panel
      *  A panel object that represents that panel that was added to the DOM
      */
-    function createPanel(options) {
+    function createPanel(options, prepend) {
         var title = PanelElements.createTitle(options.title);
         var value = PanelElements.createValue(options.value);
         var netValue = PanelElements.createNetValue(
@@ -183,7 +186,7 @@ Basic structure of a panel:
         panel.appendChild(canvasWrapper);
 
         // Add the panel to the DOM
-        addPanelToDom(panel);
+        addPanelToDom(panel, prepend);
         initialiseChart(canvas, options.graph);
     }
 
@@ -228,8 +231,11 @@ Basic structure of a panel:
      * panels.
      * @param {Element} panel
      *  The panel element to add to the DOM
+     * @param {boolean} [prepend=false]
+     *  Optionally elect to have the panel inserted at the beginning rather than appended
+     *  to the end
      */
-    function addPanelToDom(panel) {
+    function addPanelToDom(panel, prepend) {
         // Get the wrapper that all panel rows are appended to
         var panelsLocation = document.getElementById("panel-wrapper");
 
@@ -239,7 +245,13 @@ Basic structure of a panel:
         panelWrapper.classList = "col-xs-6 col-sm-4 col-md-4 col-lg-3";
         panelWrapper.appendChild(panel);
 
-        panelsLocation.appendChild(panelWrapper);
+        prepend = prepend || false;
+
+        if (prepend) {
+            panelsLocation.insertBefore(panelWrapper, panelsLocation.childNodes[0]);
+        } else {
+            panelsLocation.appendChild(panelWrapper);
+        }
     }
 
     window.Panels = {
