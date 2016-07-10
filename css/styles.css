@@ -15,6 +15,15 @@ html, body {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.banner {
+  height: 50px;
+  background: #373737;
+  border-bottom: 1px solid #1c1c1c; }
+
+.sidebar {
+  background: #fafafa;
+  min-height: 300px; }
+
 .panel-row {
   margin-bottom: 20px; }
   .panel-row .summary-panel {
@@ -254,14 +263,5 @@ html, body {
         content: attr(value); }
     .panel-row .summary-panel canvas {
       width: 100%; }
-
-.banner {
-  height: 50px;
-  background: #373737;
-  border-bottom: 1px solid #1c1c1c; }
-
-.sidebar {
-  background: #fafafa;
-  min-height: 300px; }
 
 /*# sourceMappingURL=styles.css.map */
