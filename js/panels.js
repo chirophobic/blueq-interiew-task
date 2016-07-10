@@ -29,6 +29,7 @@ Basic structure of a panel:
 
 
 (function () {
+    Chart.defaults.global.legend.display = false;
 
     /**
      * A collection of all the methods/functions that will generate different parts of
@@ -230,7 +231,7 @@ Basic structure of a panel:
         // The panel wrapper is used so that panels can be positioned correctly
         // across the page
         var panelWrapper = document.createElement("div");
-        panelWrapper.classList = "col-md-3";
+        panelWrapper.classList = "col-xs-6 col-sm-4 col-md-4 col-lg-3";
         panelWrapper.appendChild(panel);
 
         panelsLocation.appendChild(panelWrapper);

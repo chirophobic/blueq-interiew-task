@@ -1,7 +1,5 @@
 var panelsToCreate = [];
 
-Chart.defaults.global.legend.display = false;
-
 window.onload = function () {
     // Reverse the array so that the first created panal appears first
     panelsToCreate.reverse();
