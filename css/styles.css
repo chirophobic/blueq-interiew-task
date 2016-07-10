@@ -27,6 +27,12 @@ html, body {
 .sidebar {
   background: #fafafa;
   min-height: 300px; }
+  .sidebar .nav li {
+    margin: 20px 0; }
+    .sidebar .nav li a {
+      color: #4AB34C; }
+    .sidebar .nav li.active a {
+      color: #373737; }
 
 .panel-row {
   margin-bottom: 20px; }
@@ -47,11 +53,11 @@ html, body {
       margin-top: 10px;
       font-size: 38pt; }
     .panel-row .summary-panel .net-value {
-      color: blue; }
+      color: #5151c1; }
       .panel-row .summary-panel .net-value.positive {
-        color: green; }
+        color: #4AB34C; }
       .panel-row .summary-panel .net-value.negative {
-        color: red; }
+        color: #bf3131; }
     .panel-row .summary-panel .bar-chart {
       position: relative;
       width: 100%;

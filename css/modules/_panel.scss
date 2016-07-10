@@ -26,14 +26,14 @@
 
     .net-value {
       // Default to neutral
-      color: blue;
+      color: #5151c1;
 
       &.positive {
-        color: green;
+        color: #4AB34C;
       }
 
       &.negative {
-        color: red;
+        color: #bf3131;
       }
     }
 
