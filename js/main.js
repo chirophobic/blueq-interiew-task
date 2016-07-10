@@ -49,7 +49,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [210, 240, 290, 200, 220, 330, 603]
         }
     }, true);
 });
@@ -70,7 +70,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [0, 0, 2, 0, 0, 2, 3]
         }
     }, true);
 });
@@ -91,7 +91,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [70000, 62000, 75000, 67000, 72000, 90000, 145000]
         }
     }, true);
 });
@@ -112,7 +112,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [4100, 3300, 4900, 3100, 2100, 2500, 6260]
         }
     }, true);
 });
@@ -133,7 +133,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [0.0073, 0.009, 0.013, 0.015, 0.013, 0.0049, 0.0217]
         }
     }, true);
 });
@@ -154,7 +154,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [350, 400, 430, 445, 451, 460, 469]
         }
     }, true);
 });
@@ -175,7 +175,7 @@ panelsToCreate.push(function () {
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
-            values: [63000, 55000, 95000, 60000, 75000, 130000, 283000]
+            values: [1.3, 1.8, 1.5, 2, 2.4, 2.21, 2.26]
         }
     }, true);
 });
