@@ -971,7 +971,7 @@ html, body {
       .panel-row .summary-panel .bar-chart:after {
         float: right;
         content: attr(value); }
-    .panel-row .summary-panel canvas {
-      width: 100%; }
+    .panel-row .summary-panel .canvas-wrapper {
+      height: 200px; }
 
 /*# sourceMappingURL=styles.css.map */

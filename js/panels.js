@@ -30,6 +30,7 @@ Basic structure of a panel:
 
 (function () {
     Chart.defaults.global.legend.display = false;
+    Chart.defaults.global.maintainAspectRatio = false;
 
     /**
      * A collection of all the methods/functions that will generate different parts of
@@ -162,6 +163,10 @@ Basic structure of a panel:
         var canvas = document.createElement("canvas");
         canvas.height = 300;
 
+        var canvasWrapper = document.createElement("div");
+        canvasWrapper.classList = "canvas-wrapper";
+        canvasWrapper.appendChild(canvas);
+
         // The above elements all sit inside a wrapper so that that can have
         // padding
         var wrapper = document.createElement("div");
@@ -175,7 +180,7 @@ Basic structure of a panel:
         var panel = document.createElement("div");
         panel.classList = "summary-panel";
         panel.appendChild(wrapper);
-        panel.appendChild(canvas);
+        panel.appendChild(canvasWrapper);
 
         // Add the panel to the DOM
         addPanelToDom(panel);
