@@ -225,18 +225,7 @@ Basic structure of a panel:
      */
     function addPanelToDom(panel) {
         // Get the wrapper that all panel rows are appended to
-        var location = document.getElementById("panel-wrapper");
-        // Get all the panel rows
-        var panelRows = location.getElementsByClassName("panel-row");
-        var lastRow = null;
-
-        if (panelRows.length) {
-            // Get the last panel row
-            lastRow = panelRows[panelRows.length - 1];
-        } else {
-            // Create a panel row
-            lastRow = createPanelRow();
-        }
+        var panelsLocation = document.getElementById("panel-wrapper");
 
         // The panel wrapper is used so that panels can be positioned correctly
         // across the page
@@ -244,19 +233,7 @@ Basic structure of a panel:
         panelWrapper.classList = "col-md-3";
         panelWrapper.appendChild(panel);
 
-        lastRow.appendChild(panelWrapper);
-    }
-
-    /**
-     * Create a new panel row. A panel row contains all the panels.
-     * @returns {Element}
-     *  The newly created panel row element
-     */
-    function createPanelRow() {
-        var row = document.createElement("div");
-        row.classList = "row panel-row";
-        document.getElementById("panel-wrapper").appendChild(row);
-        return row;
+        panelsLocation.appendChild(panelWrapper);
     }
 
     window.Panels = {
