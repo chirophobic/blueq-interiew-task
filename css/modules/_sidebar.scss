@@ -1,3 +1,5 @@
+@import "../vendor/bootstrap/bootstrap/_variables";
+
 .sidebar {
   background: #fafafa;
   min-height: 300px;
@@ -13,6 +15,16 @@
       &.active a {
         color: #373737;
       }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .sidebar {
+    min-height: 0;
+
+    .nav li {
+      float: left;
     }
   }
 }

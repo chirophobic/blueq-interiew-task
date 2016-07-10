@@ -29,6 +29,11 @@ html, body {
   .header .period-selector .current span {
     color: #373737; }
 
+@media (max-width: 810px) {
+  .header h1 {
+    float: none; }
+  .header .toolbar {
+    float: none; } }
 .banner {
   background: #373737;
   border-bottom: 1px solid #1c1c1c;
@@ -51,6 +56,11 @@ html, body {
     .sidebar .nav li.active a {
       color: #373737; }
 
+@media (max-width: 991px) {
+  .sidebar {
+    min-height: 0; }
+    .sidebar .nav li {
+      float: left; } }
 .panel-row {
   margin-bottom: 20px; }
   .panel-row .summary-panel {

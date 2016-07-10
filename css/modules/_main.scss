@@ -37,4 +37,20 @@ html, body {
   }
 }
 
+// When the screen is too small, have the toolbar sit under the title
+// with both of them aligned right
+@media (max-width: 810px) {
+  .header {
+    h1 {
+      float: none;
+    }
+
+    .toolbar {
+      float: none;
+    }
+  }
+}
+
+
+
 
