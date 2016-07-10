@@ -11,6 +11,10 @@ A collection of utility classes and other utility items
 html, body {
   background: #f2f2f2; }
 
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 .period-selector {
   margin-top: 20px;
   margin-bottom: 20px; }
