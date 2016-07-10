@@ -17,14 +17,243 @@ html, body {
 
 .panel-row {
   margin-bottom: 20px; }
-
-.summary-panel {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #e2e2e2;
-  background: #fafafa;
-  height: 300px; }
+  .panel-row .summary-panel {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #e2e2e2;
+    background: #fafafa;
+    height: 300px; }
+    .panel-row .summary-panel .title {
+      text-transform: uppercase; }
+    .panel-row .summary-panel .value {
+      font-size: 38pt; }
+    .panel-row .summary-panel .net-value {
+      color: blue; }
+      .panel-row .summary-panel .net-value.positive {
+        color: green; }
+      .panel-row .summary-panel .net-value.negative {
+        color: red; }
+    .panel-row .summary-panel .bar-chart {
+      position: relative;
+      width: 100%;
+      background: #F1F1F1;
+      padding: 5px;
+      font-size: 8pt; }
+      .panel-row .summary-panel .bar-chart:before {
+        content: " ";
+        position: absolute;
+        margin-left: -1px;
+        border-right: 2px solid rgba(56, 150, 55, 0.51);
+        background: rgba(98, 154, 98, 0.5);
+        left: 0;
+        top: 0;
+        height: 100%; }
+      .panel-row .summary-panel .bar-chart[percentage='1']:before {
+        width: 1%; }
+      .panel-row .summary-panel .bar-chart[percentage='2']:before {
+        width: 2%; }
+      .panel-row .summary-panel .bar-chart[percentage='3']:before {
+        width: 3%; }
+      .panel-row .summary-panel .bar-chart[percentage='4']:before {
+        width: 4%; }
+      .panel-row .summary-panel .bar-chart[percentage='5']:before {
+        width: 5%; }
+      .panel-row .summary-panel .bar-chart[percentage='6']:before {
+        width: 6%; }
+      .panel-row .summary-panel .bar-chart[percentage='7']:before {
+        width: 7%; }
+      .panel-row .summary-panel .bar-chart[percentage='8']:before {
+        width: 8%; }
+      .panel-row .summary-panel .bar-chart[percentage='9']:before {
+        width: 9%; }
+      .panel-row .summary-panel .bar-chart[percentage='10']:before {
+        width: 10%; }
+      .panel-row .summary-panel .bar-chart[percentage='11']:before {
+        width: 11%; }
+      .panel-row .summary-panel .bar-chart[percentage='12']:before {
+        width: 12%; }
+      .panel-row .summary-panel .bar-chart[percentage='13']:before {
+        width: 13%; }
+      .panel-row .summary-panel .bar-chart[percentage='14']:before {
+        width: 14%; }
+      .panel-row .summary-panel .bar-chart[percentage='15']:before {
+        width: 15%; }
+      .panel-row .summary-panel .bar-chart[percentage='16']:before {
+        width: 16%; }
+      .panel-row .summary-panel .bar-chart[percentage='17']:before {
+        width: 17%; }
+      .panel-row .summary-panel .bar-chart[percentage='18']:before {
+        width: 18%; }
+      .panel-row .summary-panel .bar-chart[percentage='19']:before {
+        width: 19%; }
+      .panel-row .summary-panel .bar-chart[percentage='20']:before {
+        width: 20%; }
+      .panel-row .summary-panel .bar-chart[percentage='21']:before {
+        width: 21%; }
+      .panel-row .summary-panel .bar-chart[percentage='22']:before {
+        width: 22%; }
+      .panel-row .summary-panel .bar-chart[percentage='23']:before {
+        width: 23%; }
+      .panel-row .summary-panel .bar-chart[percentage='24']:before {
+        width: 24%; }
+      .panel-row .summary-panel .bar-chart[percentage='25']:before {
+        width: 25%; }
+      .panel-row .summary-panel .bar-chart[percentage='26']:before {
+        width: 26%; }
+      .panel-row .summary-panel .bar-chart[percentage='27']:before {
+        width: 27%; }
+      .panel-row .summary-panel .bar-chart[percentage='28']:before {
+        width: 28%; }
+      .panel-row .summary-panel .bar-chart[percentage='29']:before {
+        width: 29%; }
+      .panel-row .summary-panel .bar-chart[percentage='30']:before {
+        width: 30%; }
+      .panel-row .summary-panel .bar-chart[percentage='31']:before {
+        width: 31%; }
+      .panel-row .summary-panel .bar-chart[percentage='32']:before {
+        width: 32%; }
+      .panel-row .summary-panel .bar-chart[percentage='33']:before {
+        width: 33%; }
+      .panel-row .summary-panel .bar-chart[percentage='34']:before {
+        width: 34%; }
+      .panel-row .summary-panel .bar-chart[percentage='35']:before {
+        width: 35%; }
+      .panel-row .summary-panel .bar-chart[percentage='36']:before {
+        width: 36%; }
+      .panel-row .summary-panel .bar-chart[percentage='37']:before {
+        width: 37%; }
+      .panel-row .summary-panel .bar-chart[percentage='38']:before {
+        width: 38%; }
+      .panel-row .summary-panel .bar-chart[percentage='39']:before {
+        width: 39%; }
+      .panel-row .summary-panel .bar-chart[percentage='40']:before {
+        width: 40%; }
+      .panel-row .summary-panel .bar-chart[percentage='41']:before {
+        width: 41%; }
+      .panel-row .summary-panel .bar-chart[percentage='42']:before {
+        width: 42%; }
+      .panel-row .summary-panel .bar-chart[percentage='43']:before {
+        width: 43%; }
+      .panel-row .summary-panel .bar-chart[percentage='44']:before {
+        width: 44%; }
+      .panel-row .summary-panel .bar-chart[percentage='45']:before {
+        width: 45%; }
+      .panel-row .summary-panel .bar-chart[percentage='46']:before {
+        width: 46%; }
+      .panel-row .summary-panel .bar-chart[percentage='47']:before {
+        width: 47%; }
+      .panel-row .summary-panel .bar-chart[percentage='48']:before {
+        width: 48%; }
+      .panel-row .summary-panel .bar-chart[percentage='49']:before {
+        width: 49%; }
+      .panel-row .summary-panel .bar-chart[percentage='50']:before {
+        width: 50%; }
+      .panel-row .summary-panel .bar-chart[percentage='51']:before {
+        width: 51%; }
+      .panel-row .summary-panel .bar-chart[percentage='52']:before {
+        width: 52%; }
+      .panel-row .summary-panel .bar-chart[percentage='53']:before {
+        width: 53%; }
+      .panel-row .summary-panel .bar-chart[percentage='54']:before {
+        width: 54%; }
+      .panel-row .summary-panel .bar-chart[percentage='55']:before {
+        width: 55%; }
+      .panel-row .summary-panel .bar-chart[percentage='56']:before {
+        width: 56%; }
+      .panel-row .summary-panel .bar-chart[percentage='57']:before {
+        width: 57%; }
+      .panel-row .summary-panel .bar-chart[percentage='58']:before {
+        width: 58%; }
+      .panel-row .summary-panel .bar-chart[percentage='59']:before {
+        width: 59%; }
+      .panel-row .summary-panel .bar-chart[percentage='60']:before {
+        width: 60%; }
+      .panel-row .summary-panel .bar-chart[percentage='61']:before {
+        width: 61%; }
+      .panel-row .summary-panel .bar-chart[percentage='62']:before {
+        width: 62%; }
+      .panel-row .summary-panel .bar-chart[percentage='63']:before {
+        width: 63%; }
+      .panel-row .summary-panel .bar-chart[percentage='64']:before {
+        width: 64%; }
+      .panel-row .summary-panel .bar-chart[percentage='65']:before {
+        width: 65%; }
+      .panel-row .summary-panel .bar-chart[percentage='66']:before {
+        width: 66%; }
+      .panel-row .summary-panel .bar-chart[percentage='67']:before {
+        width: 67%; }
+      .panel-row .summary-panel .bar-chart[percentage='68']:before {
+        width: 68%; }
+      .panel-row .summary-panel .bar-chart[percentage='69']:before {
+        width: 69%; }
+      .panel-row .summary-panel .bar-chart[percentage='70']:before {
+        width: 70%; }
+      .panel-row .summary-panel .bar-chart[percentage='71']:before {
+        width: 71%; }
+      .panel-row .summary-panel .bar-chart[percentage='72']:before {
+        width: 72%; }
+      .panel-row .summary-panel .bar-chart[percentage='73']:before {
+        width: 73%; }
+      .panel-row .summary-panel .bar-chart[percentage='74']:before {
+        width: 74%; }
+      .panel-row .summary-panel .bar-chart[percentage='75']:before {
+        width: 75%; }
+      .panel-row .summary-panel .bar-chart[percentage='76']:before {
+        width: 76%; }
+      .panel-row .summary-panel .bar-chart[percentage='77']:before {
+        width: 77%; }
+      .panel-row .summary-panel .bar-chart[percentage='78']:before {
+        width: 78%; }
+      .panel-row .summary-panel .bar-chart[percentage='79']:before {
+        width: 79%; }
+      .panel-row .summary-panel .bar-chart[percentage='80']:before {
+        width: 80%; }
+      .panel-row .summary-panel .bar-chart[percentage='81']:before {
+        width: 81%; }
+      .panel-row .summary-panel .bar-chart[percentage='82']:before {
+        width: 82%; }
+      .panel-row .summary-panel .bar-chart[percentage='83']:before {
+        width: 83%; }
+      .panel-row .summary-panel .bar-chart[percentage='84']:before {
+        width: 84%; }
+      .panel-row .summary-panel .bar-chart[percentage='85']:before {
+        width: 85%; }
+      .panel-row .summary-panel .bar-chart[percentage='86']:before {
+        width: 86%; }
+      .panel-row .summary-panel .bar-chart[percentage='87']:before {
+        width: 87%; }
+      .panel-row .summary-panel .bar-chart[percentage='88']:before {
+        width: 88%; }
+      .panel-row .summary-panel .bar-chart[percentage='89']:before {
+        width: 89%; }
+      .panel-row .summary-panel .bar-chart[percentage='90']:before {
+        width: 90%; }
+      .panel-row .summary-panel .bar-chart[percentage='91']:before {
+        width: 91%; }
+      .panel-row .summary-panel .bar-chart[percentage='92']:before {
+        width: 92%; }
+      .panel-row .summary-panel .bar-chart[percentage='93']:before {
+        width: 93%; }
+      .panel-row .summary-panel .bar-chart[percentage='94']:before {
+        width: 94%; }
+      .panel-row .summary-panel .bar-chart[percentage='95']:before {
+        width: 95%; }
+      .panel-row .summary-panel .bar-chart[percentage='96']:before {
+        width: 96%; }
+      .panel-row .summary-panel .bar-chart[percentage='97']:before {
+        width: 97%; }
+      .panel-row .summary-panel .bar-chart[percentage='98']:before {
+        width: 98%; }
+      .panel-row .summary-panel .bar-chart[percentage='99']:before {
+        width: 99%; }
+      .panel-row .summary-panel .bar-chart[percentage='100']:before {
+        width: 100%; }
+      .panel-row .summary-panel .bar-chart:after {
+        float: right;
+        content: attr(value); }
+    .panel-row .summary-panel canvas {
+      width: 100%; }
 
 .banner {
   height: 50px;
