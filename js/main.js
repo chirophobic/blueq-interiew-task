@@ -44,7 +44,7 @@ panelsToCreate.push(function () {
         bar: {
             label: "Parkhurst",
             value: "",
-            percentage: 603
+            percentage: 74
         },
         graph: {
             labels: ["Jun 14", "Jul 14", "Aug 14", "Sep 14", "Oct 14", "Nov 14", "Dec 14"],
