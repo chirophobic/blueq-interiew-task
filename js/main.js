@@ -44,7 +44,7 @@ panelsToCreate.push(function () {
         },
         bar: {
             label: "Parkhurst",
-            value: "",
+            value: "3",
             percentage: 74
         },
         graph: {
