@@ -144,7 +144,29 @@ Basic structure of a panel:
     /**
      * Create a new panel and add it to the page
      * @param {{}} options
-     *  The options to create the panel with
+     *  The options to create the panel with. See below for a list of the options.
+     * @param {String} options.title
+     *  The title to set for the panel
+     * @param {String} options.value
+     *  The highlighted value to display below the title
+     * @param {String} [options.net.type]
+     *  This should be one of: positive, negative, or null/undefined. This sets how the net
+     *  value should be displayed
+     * @param {String} options.net.label
+     *  The label/text for the net value
+     * @param {String} options.bar.label
+     *  The label to display for the bar chart thing
+     * @param {String} options.bar.value
+     *  The text/value to display in the bar. This should be that actual value of the
+     *  item being measured (that the percentage is calculated from)
+     * @param {int} options.bar.percentage
+     *  The percentage to display the bar thing as. This should be a value from 0-100
+     * @param {String[]} options.graph.labels
+     *  The x-axis labels for the graph. There should be as many labels as there are
+     *  values
+     * @param {Number[]} options.graph.values
+     *  The values to display on the graph. There should be as many values as there
+     *  are labels
      * @param {boolean} [prepend=false]
      *  Optionally elect to have the new panel inserted at the beginning, rather appended
      *  to the end
@@ -163,9 +185,11 @@ Basic structure of a panel:
             options.bar.value,
             options.bar.percentage
         );
+
         var canvas = document.createElement("canvas");
         canvas.height = 300;
 
+        // We require the canvas wrapper so that the canvas can't get too big
         var canvasWrapper = document.createElement("div");
         canvasWrapper.classList = "canvas-wrapper";
         canvasWrapper.appendChild(canvas);
@@ -197,7 +221,7 @@ Basic structure of a panel:
         min = ((min / 10000) | 0) * 10000;
 
         // Initialize the chart
-        var chart = new Chart(canvas, {
+        new Chart(canvas, {
             type: 'line',
             data: {
                 labels: options.labels,
